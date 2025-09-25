@@ -1,0 +1,95 @@
+/*====== MAIN SECTION =====*/
+.main {
+    width: 100%;
+    height: 400px;
+    background: url("https://img.freepik.com/fotos-premium/ingredientes-cocinar-fondo-alimentos-vista-superior-sobre-fondo-negro_1040174-1590.jpg") center / cover no-repeat;
+}
+
+.main__container{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #000a, transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    animation: left 2200ms ease-in;
+    animation-delay: 1.5s;
+}
+
+/*-- LOGO CONTENT --*/
+.logo__container{
+ padding-left: 35px;
+ position: absolute;
+ top:15px;
+}
+
+.logo{
+    width: 220px;
+}
+
+/*-- MAIN TEXT CONTENT --*/
+.main__text-container{
+    padding: 150px 0 0 35px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main__text{
+    font-family: system-ui;
+    font-size: 44px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: -40px;
+}
+
+strong{
+    color: red;
+}
+
+
+/*-- MAIN BUTTON CONTENT --*/
+.main__button-container{
+    padding-left: 35px;
+    margin-top: 25px;
+}
+
+.main__button{
+    text-decoration: none;
+    background: red;
+    color: #fff;
+    font-family: system-ui;
+    padding: 13px 18px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 90px;
+}
+
+
+
+@media screen and (max-width: 620px){
+
+   .logo{
+      width: 150px;
+   }  
+
+   .main__text{
+      font-size: 27px;
+      font-weight: 600;
+      margin-top: -40px;
+   }
+
+   .main__button-container{
+    padding-left: 35px;
+    margin-top: 40px;
+   }
+
+
+}
+
+
+
+@keyframes left {
+    0%{right: 1800px;}
+    100%{right: 0;}
+}
